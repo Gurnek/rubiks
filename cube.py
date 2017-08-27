@@ -228,28 +228,26 @@ def back(direction):
 def readsol(sol):
     #mapping of string characters to the functions they represent
     moves = {
-        'u' : 'up(True)\n',
-        'd' : 'down(True)\n',
-        'f' : 'front(True)\n',
-        'l' : 'left(True)\n',
-        'r' : 'right(True)\n',
-        'b' : 'back(True)\n',
-        'U' : 'up(False)\n',
-        'D' : 'down(False)\n',
-        'F' : 'front(False)\n',
-        'L' : 'left(False)\n',
-        'R' : 'right(False)\n',
-        'B' : 'back(False)\n',
+        'u' : up(True),
+        'd' : down(True),
+        'f' : front(True),
+        'l' : left(True),
+        'r' : right(True),
+        'b' : back(True),
+        'U' : up(False),
+        'D' : down(False),
+        'F' : front(False),
+        'L' : left(False),
+        'R' : right(False),
+        'B' : back(False),
     }
-    exec_str = ''
+
     #moves through sol string and adds matching function call to exec_str
     for letter in sol:
-        exec_str += moves.get(letter)
-    exec(exec_str)
+        moves.get(letter)
 
     #start to move the motors
     machine == True
-    exec(exec_str)
 
 #if this is the file called
 if __name__ == '__main__':
