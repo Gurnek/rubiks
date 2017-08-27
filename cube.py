@@ -6,7 +6,7 @@ executing the solve string. It also has a virtual cube used for testing the move
 import numpy as np
 from solver import *
 from visual import numbering, temp_matrix
-
+import time
 '''
 0 = top = white
 1 = front = red
@@ -253,5 +253,7 @@ def readsol(sol):
 if __name__ == '__main__':
     print('Enter solve to start the program')
     command = input()
+    start = time.time()
     if command = 'solve':
-        solve()
+        readsol('uUdDfFlLrRbBuUdDfFlLrRbBuUdDfFlLrRbBuUdDfFlLrRbBuUdDfFlLrRbBuUdDfFlLrRbBuUdDfFlLrRbBuUdDfFlLrRbB')
+        print((time.time() - start) * 1000)
