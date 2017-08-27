@@ -254,6 +254,6 @@ if __name__ == '__main__':
     print('Enter solve to start the program')
     command = input()
     start = time.time()
-    if command = 'solve':
+    if command == 'solve':
         readsol('uUdDfFlLrRbBuUdDfFlLrRbBuUdDfFlLrRbBuUdDfFlLrRbBuUdDfFlLrRbBuUdDfFlLrRbBuUdDfFlLrRbBuUdDfFlLrRbB')
         print((time.time() - start) * 1000)
