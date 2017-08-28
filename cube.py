@@ -242,7 +242,7 @@ def readsol(sol):
         'B' : back(False),
     }
 
-    #moves through sol string and adds matching function call to exec_str
+    #moves through solve string and calls functions they represent
     for letter in sol:
         moves.get(letter)
 
