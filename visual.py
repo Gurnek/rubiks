@@ -86,7 +86,34 @@ temp_matrix = np.array([
      [30, 40, 20]]
 ])
 
+'''
+[[[41 26  3]
+  [46  5  6]
+  [51 36 59]]
+
+ [[29 24 37]
+  [54 15 58]
+  [53  2 11]]
+
+ [[13 34 17]
+  [ 4 25 28]
+  [21  8 47]]
+
+ [[31 14  9]
+  [56 35 22]
+  [39 16  1]]
+
+ [[49 42 43]
+  [38 45 48]
+  [23 18 57]]
+
+ [[19 32  7]
+  [12 55 52]
+  [33 44 27]]]
+'''
+
 #function used to convert original matrix to a solvable matrix
+#need to optimize further
 def numbering(matrix):
     #these access the data structures above for using the relations
     corner = ((0, 1, 2), corner_faces, corner_number_dict)
@@ -121,5 +148,7 @@ def numbering(matrix):
     for side in range(6):
         #add 5 to each middle piece
         matrix[side][1, 1] += 5
-    
+
     return matrix
+
+numbering(temp_matrix)
