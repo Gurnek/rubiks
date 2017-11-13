@@ -133,7 +133,6 @@ def numbering(matrix):
             c.sort()
             #retrieve final forms for each face
             new_nums = settings[2].get(tuple(c))
-
             #loop through faces again
             for face in piece:
                 #retrieve current face value
@@ -150,5 +149,3 @@ def numbering(matrix):
         matrix[side][1, 1] += 5
 
     return matrix
-
-numbering(temp_matrix)
