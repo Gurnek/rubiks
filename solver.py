@@ -1,7 +1,8 @@
-'''
-this file will host the algorithm for reading and solving the cube matrix
-and generating the solving sequence for the cube.readsol function to use.
-'''
+"""
+Take matrix from matrix.py and solve it.
+
+Uses solving algorithm based on blindfold solving.
+"""
 
 import pandas as pd
 from matrix import numbering

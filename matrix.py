@@ -1,5 +1,5 @@
 """
-This will be for analyzing the preliminary array and assigning the pieces their place numbers.
+Analyze preliminary array and assign final values.
 
 The temporary matrix will be taken from visual.py
 """

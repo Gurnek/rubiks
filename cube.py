@@ -1,3 +1,9 @@
+"""
+Houses the upper level movement functions for the cube.
+
+One function per side, parameter for direction.
+"""
+
 import numpy as np
 from solver import *
 from matrix import temp_matrix
